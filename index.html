@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Street Map</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #mi_mapa {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mi_mapa"></div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <script>
+        let map = L.map('mi_mapa').setView([-51.621640, -69.215139], 13);
+
+        // Usamos Esri World Street Map (Libre, sin API Key y sin bloqueos de IP)
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            maxZoom: 19,
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+        }).addTo(map);
+
+        // Marcadores en Río Gallegos
+        L.marker([-51.614512, -69.256198]).addTo(map)
+         .bindTooltip("Jardín de Infantes Nº 66 Yeno Kayken", {permanent: true, direction: "top"});
+
+        L.marker([-51.623288, -69.215927]).addTo(map)
+         .bindTooltip("Plaza General Jose de San Martín", {permanent: true, direction: "top"});
+
+        L.marker([-51.617692, -69.205976]).addTo(map)
+         .bindTooltip("Parque Héctor Pirincho Roquel", {permanent: true, direction: "top"});
+
+        L.marker([-51.640387, -69.190846]).addTo(map)
+         .bindTooltip("Cancha - Plaza 'Marito Romero'", {permanent: true, direction: "bottom"});
+
+        L.marker([-51.640662, -69.196478]).addTo(map)
+         .bindTooltip("Plaza Arco Iris", {permanent: true, direction: "top"});
+
+        L.marker([-51.634276, -69.207604]).addTo(map)
+         .bindTooltip("Jardín de Infantes Nº 37 'Evita'", {permanent: true, direction: "top"});
+
+        L.marker([-51.61505682034479, -69.2181149639021]).addTo(map)
+         .bindTooltip("Centro de Dia 'René Vargas'", {permanent: true, direction: "top"});
+    </script>
+</body>
+</html>
