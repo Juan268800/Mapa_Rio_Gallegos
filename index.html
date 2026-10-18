@@ -42,7 +42,14 @@
 
         // Marcadores en Río Gallegos
         L.marker([-51.614512, -69.256198]).addTo(map)
-         .bindTooltip("Jardín de Infantes Nº 66 Yeno Kayken", {permanent: true, direction: "top"});
+         .bindTooltip("Jardín de Infantes Nº 66 Yeno Kayken", {permanent: true, direction: "top"})
+         .bindPopup(`
+            <div style="text-align: center;">
+            <h3 style="margin-bottom: 5px;">Jardín de Infantes Nº 66 Yeno Kayken</h3>
+            <img src="jardin66.jpeg" alt="Jardín de Infantes Nº 66 Yeno Kayken" style="width: 100%; max-width: 220px; border-radius: 8px; margin-bottom: 8px;">
+            <p style="margin: 0;">05/12/25 Primera inserción institucional, visitamos el jardin de infantes del turno de mañana y de tarde, todas las salas</p>
+            </div>
+        `);
 
         L.marker([-51.623288, -69.215927]).addTo(map)
          .bindTooltip("Plaza General Jose de San Martín", {permanent: true, direction: "top"})
