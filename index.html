@@ -45,7 +45,14 @@
          .bindTooltip("Jardín de Infantes Nº 66 Yeno Kayken", {permanent: true, direction: "top"});
 
         L.marker([-51.623288, -69.215927]).addTo(map)
-         .bindTooltip("Plaza General Jose de San Martín", {permanent: true, direction: "top"});
+         .bindTooltip("Plaza General Jose de San Martín", {permanent: true, direction: "top"})
+         .bindPopup(`
+            <div style="text-align: center;">
+            <h3 style="margin-bottom: 5px;">Plaza General Jose de San Martín</h3>
+            <img src="plaza-sanmartin.jpeg" alt="Plaza General Jose de San Martín" style="width: 100%; max-width: 220px; border-radius: 8px; margin-bottom: 8px;">
+            <p style="margin: 0;">17/10/25 Inauguración del MABs<br>30/11/25 Muestra patrimonial y biblioteca<br>16/05/26 Noche de los museos donde participó el MABs</p>
+            </div>
+        `);
 
         L.marker([-51.617692, -69.205976]).addTo(map)
          .bindTooltip("Parque Héctor Pirincho Roquel", {permanent: true, direction: "top"});
