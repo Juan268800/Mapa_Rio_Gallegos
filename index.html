@@ -54,10 +54,37 @@
         L.marker([-51.623288, -69.215927]).addTo(map)
          .bindTooltip("Plaza General Jose de San Martín", {permanent: true, direction: "top"})
          .bindPopup(`
-            <div style="text-align: center;">
-            <h3 style="margin-bottom: 5px;">Plaza General Jose de San Martín</h3>
-            <img src="plaza-sanmartin.jpeg" alt="Plaza General Jose de San Martín" style="width: 100%; max-width: 220px; border-radius: 8px; margin-bottom: 8px;">
-            <p style="margin: 0;">17/10/25 Inauguración del MABs<br>30/11/25 Muestra patrimonial y biblioteca<br>16/05/26 Noche de los museos donde participó el MABs</p>
+            <div style="text-align: center; max-width: 220px;">
+              <h3 style="margin-bottom: 5px;">Plaza General Jose de San Martín</h3>
+              
+              <!-- Carrusel deslizable -->
+              <div style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 8px; width: 100%; max-width: 220px; scrollbar-width: thin; margin-bottom: 5px;">
+                
+                <!-- Foto 1 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="plaza-sanmartin.jpeg" alt="Foto 1" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">17/10/25 Inauguración del MABs</p>
+                </div>
+
+                <!-- Foto 2 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="muestra.jpeg" alt="Foto 2" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">30/11/25 Muestra patrimonial y biblioteca</p>
+                </div>
+
+                <!-- Foto 3 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="museo1.jpeg" alt="Foto 3" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">16/05/26 Noche de los museos donde participó el MABs por primera vez</p>
+                </div>
+
+                <!-- Foto 4 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="museo2.jpeg" alt="Foto 4" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">16/05/26 Noche de los museos donde participó el MABs por primera vez</p>
+                </div>
+
+              </div>
             </div>
         `);
 
