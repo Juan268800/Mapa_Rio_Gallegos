@@ -46,9 +46,61 @@
          .bindPopup(`
             <div style="text-align: center;">
             <h3 style="margin-bottom: 5px;">Jardín de Infantes Nº 66 Yeno Kayken</h3>
-            <img src="jardin66.jpeg" alt="Jardín de Infantes Nº 66 Yeno Kayken" style="width: 100%; max-width: 220px; border-radius: 8px; margin-bottom: 8px;">
-            <p style="margin: 0;">05/12/25 Primera inserción institucional, visitamos el jardin de infantes del turno de mañana y de tarde, todas las salas</p>
-            </div>
+            
+            <!-- Carrusel deslizable -->
+              <div style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 8px; width: 100%; max-width: 220px; scrollbar-width: thin; margin-bottom: 5px;">
+                
+                <!-- Foto 1 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="jardin66c.jpeg" alt="Foto 1" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">05/12/25 Primera inserción institucional, visitamos el jardin de infantes del turno de mañana y de tarde, todas las salas.</p>
+                </div>
+                
+                <!-- Foto 2 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="jardin66a.jpeg" alt="Foto 2" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">La docente de sala anticipa nuestra llegada, como museo de artes visuales.</p>
+                </div>
+
+                <!-- Foto 3 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="jardin66d.jpeg" alt="Foto 3" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">La profe Yesi guía la mirada de los/as chicos/as para empezar a leer la imágen, con preguntas.</p>
+                </div>
+
+                <!-- Foto 4 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="jardin66bis.jpeg" alt="Foto 4" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">La profe Ana invita a los/as chicos/as a explorar la obra escultórica a través del tacto, descubriendo de qué está hecha y cómo se siente.</p>
+                </div>
+
+                <!-- Foto 5 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="jardin66.jpeg" alt="Foto 5" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">La profe Fer realiza preguntas abiertas sobre las obras que observan para despertar la imaginación.</p>
+                </div>
+
+                <!-- Foto 6 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="jardin66b.jpeg" alt="Foto 6" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">Nos reunimos con todos los/as chicos/as del jardín junto a sus seños para despedirnos y cerrar el día felices.</p>
+                </div>
+
+                <!-- Foto 7 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="jardin66e.jpeg" alt="Foto 7" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">Momento de producción: inspirados en el brote de una planta y de las obras expuestas en el museo de artes Brotes, los/as chicos/as crean una obra escultórica con masa de sal y elementos reutilizables.</p>
+                </div>
+
+                <!-- Foto 8 y su texto -->
+                <div style="flex: 0 0 100%; width: 100%; scroll-snap-align: center;">
+                  <img src="jardin66f.jpeg" alt="Foto 8" style="width: 100%; border-radius: 8px; margin-bottom: 4px;">
+                  <p style="font-size: 12px; margin: 0;">Las producciones se exhiben en la entrada del jardín para compartir con las familias lo realizado durante el día. </p>
+                </div>
+
+              </div>
+          </div>
+            
         `);
 
         L.marker([-51.623288, -69.215927]).addTo(map)
